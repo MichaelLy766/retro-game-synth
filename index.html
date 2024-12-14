@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>8-bit Synthesizer</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tone/14.8.39/Tone.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.6.0/p5.js"></script>
+</head>
+<body>
+  <h1>8-bit Synthesizer</h1>
+
+  <!-- Synthesizer Controls -->
+  <div id="synth-controls">
+    <label>Waveform: 
+      <select id="waveform">
+        <option value="sine">Sine</option>
+        <option value="square" selected>Square</option>
+        <option value="triangle">Triangle</option>
+        <option value="sawtooth">Sawtooth</option>
+      </select>
+    </label>
+    <br>
+    <label>Filter Frequency: <input id="filter-frequency" type="range" min="100" max="10000" step="100" value="5000"></label>
+    <br>
+    <label>Attack: <input id="attack" type="range" min="0.01" max="1" step="0.01" value="0.1"></label>
+    <br>
+    <label>Release: <input id="release" type="range" min="0.01" max="1" step="0.01" value="0.5"></label>
+    <br>
+    <label>LFO Frequency: <input id="lfo-frequency" type="range" min="0.1" max="10" step="0.1" value="5"></label>
+    <br>
+    <label>Delay Time: <input id="delay-time" type="range" min="0" max="1" step="0.01" value="0.5"></label>
+    <br>
+    <label>Reverb Time: <input id="reverb-time" type="range" min="0" max="10" step="0.1" value="3"></label>
+    <br>
+
+    <!-- Visualization Canvas -->
+    <div id="visualization">
+      <script src="script.js" defer></script>
+    </div>
+      
+    <div id="notes">
+      <button data-note="C4">C</button>
+      <button data-note="D4">D</button>
+      <button data-note="E4">E</button>
+      <button data-note="F4">F</button>
+      <button data-note="G4">G</button>
+      <button data-note="A4">A</button>
+      <button data-note="B4">B</button>
+    </div>
+    <button id="start-recording">Start Recording</button>
+  </div>
+
+  <div id="recordings">
+    <h2>Recordings</h2>
+    <ul id="recordings-list"></ul>
+  </div>
+</body>
+</html>

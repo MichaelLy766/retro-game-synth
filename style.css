@@ -1,0 +1,44 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #121212;
+    color: #ffffff;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+  }
+  
+  #synth-controls {
+    margin: 20px auto;
+    max-width: 400px;
+  }
+
+  #visualization {
+    display: flex;
+    justify-content: center;
+    margin: 20px auto;
+  }
+  
+  input[type="range"] {
+    width: 100%;
+  }
+  
+  button {
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: #1db954;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #1aa34a;
+  }
+  
+  canvas {
+    display: block;
+    margin: 20px auto;
+    border: 1px solid #ffffff;
+  }
+  
