@@ -3,16 +3,16 @@ This project is a web-based tool for creating retro-style game sound effects usi
 
 ## Features
 - **Interactive Keyboard**: Play notes on a virtual keyboard styled with a retro aesthetic.
-- **Recording and Playback**: Record custom sound sequences and play them back.
-- **Customizable Synthesizer**: Modify sound parameters like waveform, pitch, and duration for unique effects.
+- **Recording and Download**: Record custom sound sequences download.
+- **Customizable Synthesizer**: Modify sound parameters like waveform, attack, and reverb to create unique effects.
 
 ## How to Use
-1. Go to [link to website]
+1. Go to the deployed [website.](https://675dc4752595e465e4fc05f8--effervescent-vacherin-0ac4ae.netlify.app/)
 2. Use the interactive keyboard to play notes.
-3. Adjust the sound parameters such as waveform, pitch, and duration to create unique effects.
-4. Press the "Record" button to capture your sound sequence.
-5. Use the "Play Recording" button to listen to your sequence.
-6. Explore the settings panel to customize your sound synthesis.
+3. Adjust the sound parameters such as waveform, attack, and reverb to create unique effects.
+4. Press the "Start Recording" button to capture your sound sequence.
+5. Use the "Stop Recording" button to end your recording.
+6. Download your recording in the menu labeled "Recordings"
 
 ## Technologies Used
 - **HTML, CSS, JavaScript**: Core web technologies for building the interface.
@@ -22,7 +22,7 @@ This project is a web-based tool for creating retro-style game sound effects usi
 ## Installation
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/retro-game-synth.git
+   git clone https://github.com/MichaelLy766/retro-game-synth.git
    ```
 2. Navigate to the project directory:
    ```bash
