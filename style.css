@@ -1,44 +1,155 @@
 body {
-    font-family: Arial, sans-serif;
-    background: #121212;
-    color: #ffffff;
-    text-align: center;
-    margin: 0;
-    padding: 20px;
-  }
-  
-  #synth-controls {
-    margin: 20px auto;
-    max-width: 400px;
-  }
+  background: linear-gradient(135deg, #ff8c42, #fc4a92);
+  color: #fff;
+  font-family: 'Press Start 2P', sans-serif;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
 
-  #visualization {
-    display: flex;
-    justify-content: center;
-    margin: 20px auto;
-  }
+/* Header */
+header {
+  padding: 20px;
+  background: #2b2d42;
+  border-bottom: 4px solid #8d99ae;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
   
-  input[type="range"] {
-    width: 100%;
-  }
-  
-  button {
-    margin: 10px;
-    padding: 10px 20px;
-    background-color: #1db954;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-  
-  button:hover {
-    background-color: #1aa34a;
-  }
-  
-  canvas {
-    display: block;
-    margin: 20px auto;
-    border: 1px solid #ffffff;
-  }
-  
+#synth-controls {
+  margin: 20px auto;
+  max-width: 400px;
+}
+
+.keyboard {
+  display: flex;
+  justify-content: center;
+  align-items: top;
+  margin: 20px 0;
+}
+
+.key {
+  width: 40px;
+  height: 150px;
+  margin: 1px;
+  border: 1px solid #333;
+  background: white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
+
+.key.black {
+  background: black;
+  height: 100px;
+  z-index: 2;
+  position: relative;
+  margin-left: -20px;
+  margin-right: -20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.6);
+}
+
+.key:active {
+  transform: translateY(2px);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+#visualization {
+  display: flex;
+  justify-content: center;
+  margin: 20px auto;
+}
+
+input[type="range"] {
+  width: 100%;
+}
+
+button {
+  margin: 10px;
+  padding: 10px 20px;
+  background-color: #1db954;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #1aa34a;
+}
+
+canvas {
+  display: block;
+  margin: 20px auto;
+  border: 1px solid #ffffff;
+}
+
+/* Recordings Section */
+#recordings {
+  margin: 40px auto;
+  max-width: 600px;
+  background: #2b2d42;
+  border: 5px solid #8d99ae;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: left;
+}
+
+#recordings h2 {
+  font-size: 1.8em;
+  color: #ef233c;
+  text-shadow: 2px 2px #000;
+  text-align: center;
+  border-bottom: 2px dashed #8d99ae;
+  padding-bottom: 10px;
+}
+
+#recordings-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+#recordings-list li {
+  background: #8d99ae;
+  color: #2b2d42;
+  border: 2px solid #2b2d42;
+  border-radius: 5px;
+  margin: 10px 0;
+  padding: 10px;
+  font-size: 0.9em;
+  font-family: 'Press Start 2P', sans-serif;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#recordings-list li a {
+  color: #ef233c;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+#recordings-list li a:hover {
+  color: #fc4a92;
+}
+
+/* Buttons */
+button {
+  font-family: 'Press Start 2P', sans-serif;
+  font-size: 1em;
+  padding: 10px 20px;
+  color: #fff;
+  background: #ef233c;
+  border: 2px solid #2b2d42;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+button:hover {
+  background: #fc4a92;
+  transform: scale(1.1);
+  box-shadow: 0 0 10px #fff;
+}
+
+/* Add Retro Pixel Font */
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');

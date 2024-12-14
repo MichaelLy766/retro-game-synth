@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="style.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/tone/14.8.39/Tone.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.6.0/p5.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
 </head>
 <body>
   <h1>8-bit Synthesizer</h1>
@@ -34,27 +35,22 @@
     <br>
     <label>Reverb Time: <input id="reverb-time" type="range" min="0" max="10" step="0.1" value="3"></label>
     <br>
-
-    <!-- Visualization Canvas -->
-    <div id="visualization">
-      <script src="script.js" defer></script>
-    </div>
-      
-    <div id="notes">
-      <button data-note="C4">C</button>
-      <button data-note="D4">D</button>
-      <button data-note="E4">E</button>
-      <button data-note="F4">F</button>
-      <button data-note="G4">G</button>
-      <button data-note="A4">A</button>
-      <button data-note="B4">B</button>
-    </div>
-    <button id="start-recording">Start Recording</button>
   </div>
+
+  <!-- Visualization Canvas -->
+  <div id="visualization">
+    <script src="script.js" defer></script>
+  </div>
+    
+  <!-- Keyboard -->
+  <div id="keyboard" class="keyboard"></div>
+
+  <button id="start-recording">Start Recording</button>
 
   <div id="recordings">
     <h2>Recordings</h2>
     <ul id="recordings-list"></ul>
   </div>
+  
 </body>
 </html>
